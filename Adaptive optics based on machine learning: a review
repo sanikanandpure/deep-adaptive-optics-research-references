@@ -5,7 +5,7 @@ Y. Guo _et al._, “Adaptive optics based on machine learning: a review,” _OEA
 
 
 ## notes
-### 1️⃣ first pass: abstract and introduction
+### first pass: abstract and introduction
 - adaptive optics are used in almost all ground-based high-resolution imaging telescopes with apertures larger than 1 meter
 - challenging problems in AO:
 	- how to get the wavefront of wavefront sensor-less AOS or array telescopes with high speed
@@ -33,8 +33,6 @@ Y. Guo _et al._, “Adaptive optics based on machine learning: a review,” _OEA
 	- real-time controller (RTC)
 	- post-processing program
 - WFS is a technique that provides a signal with which the shape of a wavefront can be estimated with sufficient accuracy --> does this in real-time
-
-![[Pasted image 20240731172125.png]]
 
 - WSFs are fast, but have a complex optical setup and require high-accuracy alignment
 	- Also, they require certain conditions in order to perform well such as a continuous wavefront and uniform amplitude
