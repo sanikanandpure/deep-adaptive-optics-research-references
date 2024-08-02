@@ -12,7 +12,7 @@
 	* remove that galaxy from the blend 
 	* process repeats until no more galaxies 
 
-![[Pasted image 20240802123406.png]]
+![image](https://github.com/user-attachments/assets/c77bdebb-3929-47f2-bbf4-e85f8d2a6ef8)
 
 deblender arch:
 * two convolution layers for feature extraction 
