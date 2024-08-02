@@ -7,4 +7,4 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 - Galaxy Deblending using Residual Dense Neural network
 \[[Paper](https://arxiv.org/pdf/2109.09550)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Galaxy%20Deblending%20using%20Residual%20Dense%20Neural%20network.md)\]
 - Deep learning for a space-variant deconvolution in galaxy surveys
-- \[[Paper]([https://arxiv.org/pdf/2109.09550](https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..67S/abstract))\]
+- \[[Paper](https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..67S/abstract)\]
