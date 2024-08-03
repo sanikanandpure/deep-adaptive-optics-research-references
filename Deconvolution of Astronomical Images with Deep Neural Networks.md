@@ -67,13 +67,13 @@ A neural network extension of the above formula is the DWDN (?) (need to review 
 
 We keep the refining module R the same way except the number of channels of its input feature is C times as original DWDN because of the concatenation. In this way, different bands of the input image will execute their own deep Wiener deconvolution and the deconvolved features are utilized to restore the clean images (in all bands?).
 
-![[paper4_deconvolution_modules_diagram.png]]
+![image](paper4_deconvolution_modules_diagram.png)
 
 ### custom loss function
 - majority of image analysis papers use cookie-cutter loss functions, but are not domain-specific
 - in astronomy, we are interested in particular properties of the output image; particularly, object brightness, position, and shape --> it is important to include them into the loss function so that the neural network can focus explicitly on those values
 
-![[paper4_quantities_of_interest.png]]
+![image](paper4_quantities_of_interest.png)
 
 ### training procedure and loss function
 - training occurs in two phases:
@@ -81,7 +81,7 @@ We keep the refining module R the same way except the number of channels of its 
 	- second phase: model is fine-tuned with more complex loss which include astronomical quantities 
 	In other words, model needs to be pre-trained generally first, then with the more domain-specific loss function in order to get best results.
 
-	![[paper4_quantities_of_interest.png]]
+![image](paper4_quantities_of_interest.png)
 
 ### data
 - dataset used was WeakLensingDeblending package developed by LSST Data Management
