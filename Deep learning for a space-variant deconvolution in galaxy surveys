@@ -11,10 +11,13 @@ F. Sureal _et al._, “Deep learning for a space-variant deconvolution in galaxy
 zooming into tiny details / pixels (down sampling) and then pieces the details together (upsampling).
 - 1st approach is a post-processing of a mere Tikhonov deconvolution with closed-form solution
 - 2nd approach is an iterative deconvolution framework based on the alternating direction method of multipliers (ADMM).
+- techniques outperform standard techniques
+-- Tikhonov approach yields highly accurate resutls except for ellipticity errors at high signal-to-noise ratio, where the ADMM approach performs slightly better
+- Tikhonov is more efficient.
+
+### key points
 
 
-
-### 
 
 ### conclusion
 
