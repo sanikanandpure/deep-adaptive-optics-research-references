@@ -87,7 +87,7 @@ for the validation set, 10 000 galaxies. The additional 10 000
 galaxies were used to test approaches.
 
 ### sample approached logic for the DNN training using the Tikhonov approach
-![image](sample logic.PNG)
+![image]([sample logic.PNG](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/39ac18304226b107f9d0dbef04c67a780bb2ba97/sample%20logic.PNG))
 
 ### example results from the approaches: 
 ![image](https://www.aanda.org/articles/aa/full_html/2020/09/aa37039-19/F13.html)
