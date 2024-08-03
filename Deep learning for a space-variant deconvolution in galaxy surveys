@@ -18,7 +18,7 @@ zooming into tiny details / pixels (down sampling) and then pieces the details t
 ### key points
 - PSF (point spread function) ( The PSF field is usually estimated beforehand through parametric models and simulations as in Krist _et al._ (2011) or is directly estimated from
 the (noisy) observations of stars in the field of view )
-- 
+- Similar to the U-net approach by Vojtekova et. al except they used (Convolutional neural networks) while this use a deep neural network. 
 - More than 1000 images were processed
 - The proposed deep-learning approaches outperform standard techniques, with the Tikhonet approach achieving an improvement of about 14% in terms of the median pixel error and an improvement of about 13% 
 for the median shape measurement errors compared to sparse recovery. We evaluated these approaches compared to the deconvolution techniques in Farrens et al (2017) in simulations of realistic galaxy images 
@@ -32,9 +32,25 @@ At higher S/N, the ADMMnet approach leads to slightly smaller ellipticity errors
 - The first method uses a deep neural network
 (DNN) to post-process a Tikhonov deconvolution, and the second includes a DNN that is trained to denoise in an iterative
 algorithm derived from convex optimization
+- Tikhonet Approach:
+Combines Tikhonov deconvolution with a DNN.
+Acts as a post-processing step.
+Tikhonov hyperparameter for this approach. 
+- ADMMnet Approach:
+Utilizes a DNN denoiser within an iterative ADMM Plug-and-Play (PnP) algorithm.
+Incorporates regularization via DNN.
+continuation hyperparameters for ADMMnet.
+DNN Architecture:
+- Compared with deconvolution techniques from Farrens et al. (2017).
+Used simulations of realistic galaxy images (HST observations).
+Considered sparse-variant PSFs and noise, simulated with GalSim.
+- Modifications:
+-- Dense blocks of separable convolutions.
+Removal of skip connections.
+Reduced number of parameters compared to standard U-net.
 
 ### deep learning approach
-- 
+-
 
 ### sample approached logic for the DNN training using the Tikhonov approach
 ![image]()
@@ -47,6 +63,9 @@ algorithm derived from convex optimization
 - 2 new space-variant deconvolution strategies for galaxy images based on deep neural networks 
 - the Tikhonet approach is a post-processing approach of a simple Tikhonov deconvolution with a DNN, 
 - the ADMMnet approach is based on regularization by a DNN denoiser inside an iterative ADMM PnP algorithm for deconvolution.
+
+### possible improvements:
+- ADMMnet approach can further be improved, additional constraints could be added easily to the framework
 
 ### useful resources we can use: (as used by this article)
 https://github.com/pmelchior/shapelens 
