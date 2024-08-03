@@ -29,4 +29,7 @@ the (noisy) observations of stars in the field of view )
 - the Tikhonet approach is a post-processing approach of a simple Tikhonov deconvolution with a DNN, 
 - the ADMMnet approach is based on regularization by a DNN denoiser inside an iterative ADMM PnP algorithm for deconvolution.
 
-NOTE: references include useful resources.
+### useful resources we can use: (as used by this article)
+https://github.com/pmelchior/shapelens 
+https://github.com/sfarrens/sf_deconvolve
+https://github.com/GalSim-developers/GalSim
