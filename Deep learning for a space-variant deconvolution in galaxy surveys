@@ -27,7 +27,6 @@ can be achieved at low signal-to-noise ratio (S/N) with the classical architectu
 The two methods visually outperform the sparse recovery and low-rank techniques, which display artifacts at the low S/N we probed. This is confirmed in all S/N ranges and for a realistic distribution of S/N. 
 In the latter, an improvement of about 14% is achieved in terms of the median pixel error and an improvement of about 13% for the median shape measurement errors for the Tikhonet approach compared to sparse recovery
 At higher S/N, the ADMMnet approach leads to slightly smaller ellipticity errors. 
-- 
 
 ###  method and implementation
 - The first method uses a deep neural network
@@ -39,6 +38,10 @@ algorithm derived from convex optimization
 
 ### sample approached logic for the DNN training using the Tikhonov approach
 ![image]()
+
+### example results from the approaches: 
+![image](https://www.aanda.org/articles/aa/full_html/2020/09/aa37039-19/F13.html)
+- Deconvolved images with the various approaches for S/N 20. Each row corresponds to a different processed galaxy. From left to right: image to recover, observation with a noise realization, sparse and low-rank approaches, and the Tikhonet and ADMMnet results.
 
 ### conclusion
 - 2 new space-variant deconvolution strategies for galaxy images based on deep neural networks 
