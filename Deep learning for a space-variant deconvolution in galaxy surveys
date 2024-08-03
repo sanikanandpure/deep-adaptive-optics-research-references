@@ -20,6 +20,22 @@ zooming into tiny details / pixels (down sampling) and then pieces the details t
 the (noisy) observations of stars in the field of view )
 - 
 - More than 1000 images were processed
+- The proposed deep-learning approaches outperform standard techniques, with the Tikhonet approach achieving an improvement of about 14% in terms of the median pixel error and an improvement of about 13% 
+for the median shape measurement errors compared to sparse recovery. We evaluated these approaches compared to the deconvolution techniques in Farrens et al (2017) in simulations of realistic galaxy images 
+derived from HST observations, with realistically sampled sparse-variant PSFs and noise, processed with the GalSim simulation code. The situation is more balanced for the ADMMnet, where smaller pixel errors 
+can be achieved at low signal-to-noise ratio (S/N) with the classical architecture, but the XDense U-net provides the best results for pixel errors at high S/N and ellipticity errors at high and low S/N
+The two methods visually outperform the sparse recovery and low-rank techniques, which display artifacts at the low S/N we probed. This is confirmed in all S/N ranges and for a realistic distribution of S/N. 
+In the latter, an improvement of about 14% is achieved in terms of the median pixel error and an improvement of about 13% for the median shape measurement errors for the Tikhonet approach compared to sparse recovery
+At higher S/N, the ADMMnet approach leads to slightly smaller ellipticity errors. 
+- 
+
+###  method and implementation
+- The first method uses a deep neural network
+(DNN) to post-process a Tikhonov deconvolution, and the second includes a DNN that is trained to denoise in an iterative
+algorithm derived from convex optimization
+
+### deep learning approach
+- 
 
 ### sample approached logic for the DNN training using the Tikhonov approach
 ![image]()
@@ -31,5 +47,5 @@ the (noisy) observations of stars in the field of view )
 
 ### useful resources we can use: (as used by this article)
 https://github.com/pmelchior/shapelens 
-https://github.com/sfarrens/sf_deconvolve
-https://github.com/GalSim-developers/GalSim
+https://github.com/sfarrens/sf_deconvolve 
+https://github.com/GalSim-developers/GalSim  --- simulation code and potential database
