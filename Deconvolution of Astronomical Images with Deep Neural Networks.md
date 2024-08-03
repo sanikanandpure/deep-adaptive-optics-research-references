@@ -63,7 +63,7 @@ A neural network extension of the above formula is the DWDN (?) (need to review 
 	- this paper proposes an enhanced version of DWDN that can work on band-dependent PSFs
 	- to apply feature-based deconvolution on different input bands separately, we parallel three deconvolution modules (this number is variable based on the number of bands)
 
-[[paper4_deconvolution_modules.png]]
+[[https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/68a5547f06cdc6de225cda14e26465fcb08c37db/paper4_quantities_of_interest.png]]
 
 We keep the refining module R the same way except the number of channels of its input feature is C times as original DWDN because of the concatenation. In this way, different bands of the input image will execute their own deep Wiener deconvolution and the deconvolved features are utilized to restore the clean images (in all bands?).
 
