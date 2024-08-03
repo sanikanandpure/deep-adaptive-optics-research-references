@@ -21,6 +21,8 @@ the (noisy) observations of stars in the field of view )
 - 
 - More than 1000 images were processed
 
+### sample approached logic for the DNN training using the Tikhonov approach
+![image](https://github.com/user-attachments/assets/c77bdebb-3929-47f2-bbf4-e85f8d2a6ef8)
 
 ### conclusion
 - 2 new space-variant deconvolution strategies for galaxy images based on deep neural networks 
