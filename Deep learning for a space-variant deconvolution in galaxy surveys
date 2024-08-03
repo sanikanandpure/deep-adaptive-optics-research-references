@@ -1,17 +1,17 @@
 ## citation
 F. Sureal _et al._, “Deep learning for a space-variant deconvolution in galaxy surveys”, 2019
+
 ## summary
 The study uses simulations of realistic galaxy images derived from HST observations, with realistically sampled sparse-variant PSFs and noise, processed with the GalSim simulation code.
 
 ## notes
-### abstract readthrough:
 - deconvolution of images require consideration to space-variant point spread function
 - deep learning 
 - U-net neural networks where a U-shape is created using down and up-sampling (Simply put, it analyzes the image by small pieces -
 zooming into tiny details / pixels (down sampling) and then pieces the details together (upsampling).
 - 1st approach is a post-processing of a mere Tikhonov deconvolution with closed-form solution
 - 2nd approach is an iterative deconvolution framework based on the alternating direction method of multipliers (ADMM).
-- techniques outperform standard techniques
+- these two techniques outperform standard techniques
 -- Tikhonov approach yields highly accurate resutls except for ellipticity errors at high signal-to-noise ratio, where the ADMM approach performs slightly better
 - Tikhonov is more efficient.
 
@@ -22,7 +22,7 @@ the (noisy) observations of stars in the field of view )
 - More than 1000 images were processed
 
 ### sample approached logic for the DNN training using the Tikhonov approach
-![image](https://github.com/user-attachments/assets/c77bdebb-3929-47f2-bbf4-e85f8d2a6ef8)
+![image]()
 
 ### conclusion
 - 2 new space-variant deconvolution strategies for galaxy images based on deep neural networks 
