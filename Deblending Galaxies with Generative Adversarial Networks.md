@@ -17,11 +17,11 @@
 	* Framework 3: Takes row res image and generates higher res images (multi-waveband)
 * Used minimax loss function and Adam optimizer
 * further research: other blends other than just 2 galaxies, more realistic dist. of angular distance, other depths 
+![image](https://github.com/user-attachments/assets/35d1339a-e689-4fdc-8357-fb5ef18e6209)
 
-![[Pasted image 20240807113149.png]]
-![[Pasted image 20240807121541.png]]
+![image](https://github.com/user-attachments/assets/227c6a4f-77f5-46e1-b35d-08d1ee64d0d5)
 
-![[Pasted image 20240807122000.png]]
+![image](https://github.com/user-attachments/assets/12da4a83-f37c-4d76-8097-490463ca00db)
 ## other research referenced (might be a good place to look)
 
 Schawinski, K., Zhang, C., Zhang, H., Fowler, L., & Santhanam, G. K. 2017, MNRAS, 467, L110
