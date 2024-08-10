@@ -11,4 +11,4 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 - Deconvolution of Astronomical Images with Deep Neural Networks
 \[[Paper](https://openreview.net/forum?id=wduF2lfW30)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/9e141ac81beb5afbd61e199559a7d89403501f48/Deconvolution%20of%20Astronomical%20Images%20with%20Deep%20Neural%20Networks.md)\]
 - Deblending galaxies with variational autoencoders: A joint multiband, multi-instrument approach
-\[[Paper](https://openreview.net/forum?id=wduF2lfW30)\] \[[Notes]()\]
+\[[Paper](https://openreview.net/forum?id=wduF2lfW30)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxies%20with%20variational%20autoencoders.md)\]
