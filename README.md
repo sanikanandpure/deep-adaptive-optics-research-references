@@ -13,4 +13,4 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 - Deblending galaxies with variational autoencoders: A joint multiband, multi-instrument approach
 \[[Paper](https://openreview.net/forum?id=wduF2lfW30)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxies%20with%20variational%20autoencoders.md)\]
 - Analyzing and Processing of Astronomical Images using Deep Learning Techniques
-\[[Paper](https://openreview.net/forum?id=wduF2lfW30)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxies%20with%20variational%20autoencoders.md)]\]
+\[[Paper](https://openreview.net/forum?id=wduF2lfW30)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxies%20with%20variational%20autoencoders.md)\]
