@@ -1,5 +1,5 @@
 ## citation
-[1] S. VY, S. Sen, and K. Santosh, “Analyzing and Processing of Astronomical Images using Deep Learning Techniques,” in 2021 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT), Jul. 2021, pp. 01–06. doi: 10.1109/CONECCT52877.2021.9622583.
+S. VY, S. Sen, and K. Santosh, “Analyzing and Processing of Astronomical Images using Deep Learning Techniques,” in 2021 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT), Jul. 2021, pp. 01–06. doi: 10.1109/CONECCT52877.2021.9622583.
 
 ## summary
 Degenerated into a survey paper and was extremely high-level/amateur (ex., got their data from a kaggle challenge). Concluded that AlexNet and custom CNNs perform about the same. 
