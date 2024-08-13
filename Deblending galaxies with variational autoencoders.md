@@ -2,7 +2,7 @@
 B. Arcelin _et al._, “Deblending galaxies with variational autoencoders”, 2021
 
 ## summary
-Method using variational autoencoders (VAE) to deblend galaxy images, achieving low biases and errors in shape parameters and magnitudes, and discuss the potential applications and limitations of this approach using galaxy images from Legacy Survey of Space and Time (LSST) and the Euclid satellite and generated GalSim (https://github.com/GalSim-developers/GalSim) software and based on a public catalogue from observations of the COSMOS field by the Hubble Space Telescope. The main goal was to develop a method to deblend galaxy images and evaluate its performance in terms of statistical reconstruction errors on ellipticities and magnitudes. 
+Method using variational autoencoders (VAE) to deblend galaxy images, achieving low biases and errors in shape parameters and magnitudes, and discuss the potential applications and limitations of this approach using galaxy images from Legacy Survey of Space and Time (LSST) and the Euclid satellite and generated images using GalSim (https://github.com/GalSim-developers/GalSim) software and based on a public catalogue from observations of the COSMOS field by the Hubble Space Telescope. The main goal was to develop a method to deblend galaxy images and evaluate its performance in terms of statistical reconstruction errors on ellipticities and magnitudes. 
 
 ## notes
 - 
