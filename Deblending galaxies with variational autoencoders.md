@@ -1,1 +1,31 @@
+## citation
+B. Arcelin _et al._, “Deblending galaxies with variational autoencoders”, 2021
+
+## summary
+Method using variational autoencoders (VAE) to deblend galaxy images, achieving low biases and errors in shape parameters and magnitudes, and discuss the potential applications and limitations of this approach using galaxy images from Legacy Survey of Space and Time (LSST) and the Euclid satellite and generated GalSim (https://github.com/GalSim-developers/GalSim) software and based on a public catalogue from observations of the COSMOS field by the Hubble Space Telescope. The main goal was to develop a method to deblend galaxy images and evaluate its performance in terms of statistical reconstruction errors on ellipticities and magnitudes. 
+
+## notes
+- 
+
+### key points
+-
+
+###  method and implementation
+-  Two VAE-like neural networks: one to learn a generative model of isolated galaxy images, and another to perform deblending. They train the networks on simulated images and evaluate their performance using reconstruction metrics.
+-  
+
+### deep learning approach
+-
+
+## image generation to train networks
+- 
+
+### conclusion
+- Good approach for deblending galaxy images, achieving low biases and errors in shape parameters and magnitudes.
+- Limitations include:need for accurate centroid localization and the potential impact of decentring on the results & applying this method to real data. + Effective PSF on a stacked image not being exactly the median of the distribution, and the fixed stamp size chosen to work with simple network architectures. Method may degrade with larger decentring errors caused by the associated peak detection algorithm.
+
+### possible improvements:
+- Applying their method to real data, improving the detection pipeline, and exploring other applications of VAE in weak-lensing measurement pipelines
+- Exploring the use of transfer learning techniques
+- Replacing the decoder by a simpler network that would parametrize the joint likelihood of the ellipticities and magnitude, and using multiple stamp sizes for each instrument
 
