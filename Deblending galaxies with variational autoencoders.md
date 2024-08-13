@@ -12,7 +12,7 @@ Method using variational autoencoders (VAE) to deblend galaxy images, achieving 
 
 ###  method and implementation
 -  Two VAE-like neural networks: one to learn a generative model of isolated galaxy images, and another to perform deblending. They train the networks on simulated images and evaluate their performance using reconstruction metrics.
--  
+-  Two-step approach, where the first step involves training a VAE to learn features of galaxy images, and the second step involves training another network to perform deblending in a latent space. The study also uses simulated images and evaluates the performance of the deblender network in terms of statistical reconstruction errors on ellipticities and magnitudes.
 
 ### deep learning approach
 -
@@ -28,4 +28,7 @@ Method using variational autoencoders (VAE) to deblend galaxy images, achieving 
 - Applying their method to real data, improving the detection pipeline, and exploring other applications of VAE in weak-lensing measurement pipelines
 - Exploring the use of transfer learning techniques
 - Replacing the decoder by a simpler network that would parametrize the joint likelihood of the ellipticities and magnitude, and using multiple stamp sizes for each instrument
+
+### resources 
+Public code: https://github.com/LSSTDESC/DeblenderVAE
 
