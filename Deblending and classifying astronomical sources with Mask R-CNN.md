@@ -1,27 +1,40 @@
 ## citation
-B. Arcelin _et al._, “Deblending galaxies with variational autoencoders”, 2021
+C. Burke _et al._, “Deblending and classifying astronomical sources with Mask R-CNN deep learning”, 2019
 
 ## summary
-Method using variational autoencoders (VAE) to deblend galaxy images, achieving low biases and errors in shape parameters and magnitudes, and discuss the potential applications and limitations of this approach using galaxy images from Legacy Survey of Space and Time (LSST) and the Euclid satellite and generated images using GalSim (https://github.com/GalSim-developers/GalSim) software and based on a public catalogue from observations of the COSMOS field by the Hubble Space Telescope. The main goal was to develop a method to deblend galaxy images and evaluate its performance in terms of statistical reconstruction errors on ellipticities and magnitudes. 
+Deep learning technique using Mask Region-based Convolutional Neural Network (Mask R-CNN) to detect, classify, and deblend sources in multiband astronomical images, achieving high precision and recall rates for star and galaxy classes. Mask R-CNN algorithm is designed to identify each individual components in the image, classify, and essentially "assume" whether it is background objects, galaxies or stars, and combine them all into one hollistic pictures based on the identification of galaxies + stars. This model is trained using Using Photon Simulator (PhoSim - works by generating a catalogue from a three-dimensional space), we generate simulated images and catalogues used as a ground truth comparison for supervised machine learning and then images from Dark Energy Camera (DECam) images for actual classification testing. 
 
 ## notes
 
+### accuracies and issues
+- Precision of 92% at 80% recall for stars and a precision of 98% at 80% recall for galaxies in a typical field with ∼30 galaxies arcmin−2 with a minimum detection confidence threshold of 0.5
+- The network is not sensitive to the number of density of sources in the image.
+- Many classification and deblending codes operate monochromatically, not taking into account source colour gradient information
+- Because of the region-based nature of the Mask R-CNN neural network, the results are insensitive to the density of sources in the image may be used at different galactic latitudes
+- Insensitive to configuration parameters, such as the density of sources in the field, PSF size, and exposure time. Instead, a large and diverse set of training images and additional data augmentations is needed.
+- Issues arise if the real images do not mimic the simulated images
+- Near the galactic centre of the Milky Way, or images of large/extended galaxies may be challenging regimes.
+- Not train for detections on sources that are completely obscured by another object
+- It can be hard to correct for the systematic differences between simulated and real images
+
 ###  method and implementation
--  Two VAE-like neural networks: one to learn a generative model of isolated galaxy images, and another to perform deblending. They train the networks on simulated images and evaluate their performance using reconstruction metrics.
--  Two-step approach, where the first step involves training a VAE to learn features of galaxy images, and the second step involves training another network to perform deblending in a latent space. The study also uses simulated images and evaluates the performance of the deblender network in terms of statistical reconstruction errors on ellipticities and magnitudes.
--  Distribution of measured errors: signal-to-noise ratio (SNR) and blendedness metrics
+- The authors use PhoSim to generate a large, uniform, and realistic training set of DECam images, with approximately 150,000 astronomical sources.
 
 ### deep learning approach
-- VAEs parametrized by CNNs (Convolutional Neural Network) provide powerful models able to learn features of galaxy images from a noisy sample with sufficient accuracy to recover ellipticities and magnitudes. The deblender network is able to isolate galaxies and recover their properties with low biases, and the method is robust to pixelization-related and/or modest decentring.
+- Mask R-CNN is a deep learning model that detects objects in images, classifies them, and precisely segments them by outlining their shapes.
+- It works by first scanning the image to propose regions where objects might be, then refining these regions to accurately identify and classify the objects within them. The model also creates detailed masks that highlight the exact boundaries of each object.
+- Used to identify and map galaxies in images of the night sky by detecting and segmenting them from the background, allowing for precise analysis of their shapes and positions.
 
 ### conclusion
-- Good approach for deblending galaxy images, achieving low biases and errors in shape parameters and magnitudes.
-- Limitations include:need for accurate centroid localization and the potential impact of decentring on the results & applying this method to real data. + Effective PSF on a stacked image not being exactly the median of the distribution, and the fixed stamp size chosen to work with simple network architectures. Method may degrade with larger decentring errors caused by the associated peak detection algorithm.
+- The authors achieve high precision and recall rates for star and galaxy classes, and demonstrate the robustness of their technique in handling clean deblends during object masking, even for significantly blended sources.
+- Runs in 100 ms or less depending on GPU used
 
 ### possible improvements:
-- Applying their method to real data, improving the detection pipeline, and exploring other applications of VAE in weak-lensing measurement pipelines
-- Exploring the use of transfer learning techniques
-- Replacing the decoder by a simpler network that would parametrize the joint likelihood of the ellipticities and magnitude, and using multiple stamp sizes for each instrument
+- Use this work as an example to apply even newer and rapidly advancing techniques from the computer vision community to astronomy
+- explore masking additional features such as cosmic rays and bleed trails.
+- explore different network architectures for instance segmentation, such as the popular U-Net (U-Net may be better-suited to full-scale astronomical images because it does not create regions around each object, which can lead to inefficiencies in the training. The down-side is that U-Net can only inherently perform semantic segmentation (i.e. not distinguishing masks of individual objects of the same class). Therefore, these methods must eventually fall-back on traditional techniques to handle mask occlusion, and may suffer from the same issues current pipelines face in crowded fields.)
+- Explore (a) executing and tiling results on a full-scale data set with images taken under a variety of conditions, such as DES or HSC deep coadd images; (b) predicting probability contours for objects by training using different mask sizes or IOU cut-offs, add photometric redshift prediction, adding additional galaxy classes in place of the generic ‘galaxy’ classification, such as spiral, elliptical, irregular, and lensed; and (c) implementing a more robust interface for training and configurations. Mask R-CNN can also be used on video for real-time instance segmentation, which may have interesting applications for LSST and time-domain astronomy.
+
 
 ### resources 
 Public code: https://github.com/burke86/astro_rcnn
