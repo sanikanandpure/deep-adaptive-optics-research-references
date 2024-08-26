@@ -18,3 +18,8 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 \[[Paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_Blind_Image_Deblurring_With_Local_Maximum_Gradient_Prior_CVPR_2019_paper.pdf)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/017c76fb93848c18ebbfb6bfbbc4daa7ce72a9d7/Blind%20Image%20Deblurring%20With%20Local%20Maximum%20Gradient%20Prior.md)\]
 - Deblending and classifying astronomical sources with Mask R-CNN deep learning
 \[[Paper](https://academic.oup.com/mnras/article/490/3/3952/5585422)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20and%20classifying%20astronomical%20sources%20with%20Mask%20R-CNN.md)\]
+- Gaussian Process Classification for Galaxy Blend Identification in LSST
+\[[Paper](https://arxiv.org/abs/2107.09246)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-researchreferences/blob/main/Gaussian%20Process%20Classification%20for%20Galaxy%20Blend%20Identification%20in%20LSST.md)\]
+- Deblending Galaxies with Generative Adversarial Networks
+\[[Paper](https://arxiv.org/abs/2211.04488)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxy%20superpositions%20with%20branched%20generative%20adversarial%20networks.md)\]
+
