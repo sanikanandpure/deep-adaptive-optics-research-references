@@ -12,11 +12,12 @@
 	* Logistic Regression
 	* Gaussian Process Regression 
 * conclusion: CNN better unblended accuracy while Gaussian has better blended accuracy
-![[Pasted image 20240821184610.png]]
+![image](https://github.com/user-attachments/assets/2898a3be-7abb-42a1-a3ca-c1e0711827b3)
 
-![[Pasted image 20240821184715.png]]
+![image](https://github.com/user-attachments/assets/7d389eec-d48c-4f71-92eb-00e6ded28257)
 
-![[Pasted image 20240821184729.png]]
+![image](https://github.com/user-attachments/assets/ca947615-ae22-4362-83f7-d6df807ac4a6)
+
 (note: pipeline, custom, & variant were three different ways the data was preprocessed)
 ## other research referenced (might be a good place to look)
 
