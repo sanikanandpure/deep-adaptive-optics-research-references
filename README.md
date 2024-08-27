@@ -22,4 +22,6 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 \[[Paper](https://arxiv.org/abs/2107.09246)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Gaussian%20Process%20Classification%20for%20Galaxy%20Blend%20Identification%20in%20LSST.md)\]
 - Deblending galaxy superpositions with branched generative adversarial networks
 \[[Paper](https://arxiv.org/abs/2211.04488)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxy%20superpositions%20with%20branched%20generative%20adversarial%20networks.md)\]
+- Learning a Convolutional Neural Network for Non-uniform Motion Blur Removal
+\[[Paper](https://arxiv.org/pdf/1503.00593)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/1498349ce74e041b501bb1cac3ab023e5e91df62/Learning%20a%20Convolutional%20Neural%20Network%20for%20Non-uniform%20Motion%20Blur%20Removal.md)\]
 
