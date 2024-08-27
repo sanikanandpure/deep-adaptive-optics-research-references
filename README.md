@@ -20,6 +20,6 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 \[[Paper](https://academic.oup.com/mnras/article/490/3/3952/5585422)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20and%20classifying%20astronomical%20sources%20with%20Mask%20R-CNN.md)\]
 - Gaussian Process Classification for Galaxy Blend Identification in LSST
 \[[Paper](https://arxiv.org/abs/2107.09246)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Gaussian%20Process%20Classification%20for%20Galaxy%20Blend%20Identification%20in%20LSST.md)\]
-- Deblending Galaxies with Generative Adversarial Networks
+- Deblending galaxy superpositions with branched generative adversarial networks
 \[[Paper](https://arxiv.org/abs/2211.04488)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxy%20superpositions%20with%20branched%20generative%20adversarial%20networks.md)\]
 
