@@ -24,4 +24,6 @@ We are a research group in UT Austin's Geometry of Space stream studying deep le
 \[[Paper](https://arxiv.org/abs/2211.04488)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/main/Deblending%20galaxy%20superpositions%20with%20branched%20generative%20adversarial%20networks.md)\]
 - Learning a Convolutional Neural Network for Non-uniform Motion Blur Removal
 \[[Paper](https://arxiv.org/pdf/1503.00593)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/1498349ce74e041b501bb1cac3ab023e5e91df62/Learning%20a%20Convolutional%20Neural%20Network%20for%20Non-uniform%20Motion%20Blur%20Removal.md)\]
+- Learning a Convolutional Neural Network for Non-uniform Motion Blur Removal
+\[[Paper](https://arxiv.org/abs/2201.04714)\] \[[Notes](https://github.com/sanikanandpure/deep-adaptive-optics-research-references/blob/bc800cd18a8db0b553aaa122ad2a8d1de4aa5e44/Partial-Attribution%20Instance%20Segmentation%20for%20Astronomical%20Source%20Detection%20and%20Deblending.md)\]
 
